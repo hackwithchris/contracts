@@ -1,0 +1,18 @@
+{
+  "name": "nft-contracts",
+  "version": "1.0.0",
+  "description": "nft contracts for the Learn Blockchain With Chris series",
+  "author": "Christopher Chen",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
+    "cover": "hardhat coverage",
+    "verify": "hardhat etherscan-verify --solc-input",
+    "verify:tbsc": "hardhat --network tbsc etherscan-verify --solc-input",
+    "verify:bsc": "hardhat --network bsc etherscan-verify --solc-input",
+    "nft": "hardhat run scripts/nft-functionality.js",
+    "gen": "hardhat gen-interface"
+  }
+}
