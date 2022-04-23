@@ -10,4 +10,14 @@ I used to develop smart contracts using Truffle and Ganache stack but fell in lo
 ## Overview
 
 After much trial and error I found that keeping a separate hardhat project for groups of contracts made my life a lot easier. The reason for this is because different contracts may need different versions of solidity. we will use [Yarn Workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/) to keep all the separate hardhat projects together in one repo while sharing dependencies.
-I personally also prefer using yarn to npm. Each hardhat project will be in its separate directory within the projects folder.
+I personally also prefer using yarn to npm. Each hardhat project will be in its separate directory within the projects folder. We will be installing all the dependencies in the root package.json and these can be shared amongst all the hardhat projects we create instead of adding the same dependencies for each project.
+
+## Setup
+
+### .env file
+All our secrets will need to be placed into a .env file at the root of the project. We will be using [dotenv](https://github.com/motdotla/dotenv) to easily access these values in our project.
+
+Keys in the `.env` file
+- `MNEMONIC` - this will be the seed phrase for your development wallet
+- `MUMBAI_RPC` - this is the rpc url that we have from moralis's speedy node
+- `POLYGON_API_KEY` - this is generated from polyscan and used for verifying contracts
