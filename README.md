@@ -2,6 +2,8 @@
 
 All smart contracts for the **Learn Blockchain With Chris** series will be housed here. We will start with a simple NFT contract and build out more from there.
 
+We will be using [ERC721A](https://www.erc721a.org/) standard for our NFTs. This was developed by Azuki and saves gas. Many well known projects including [Baz Tour](https://baz.golf) also uses this.
+
 ## Tech
 
 We will be using [Hardhat](https://hardhat.org/) with [Ethers](https://docs.ethers.io/v5/) and our unit tests will use [Waffle](https://getwaffle.io/) which is built into Hardhat. They use [Mocha](https://mochajs.org/) under the hood so it will be really easy for experienced javascript developers to pick up.
