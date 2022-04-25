@@ -25,3 +25,14 @@ Keys in the `.env` file
 - `MNEMONIC` - this will be the seed phrase for your development wallet
 - `MUMBAI_RPC` - this is the rpc url that we have from moralis's speedy node
 - `POLYGON_API_KEY` - this is generated from polyscan and used for verifying contracts
+
+### Yarn Workspaces
+We setup the package.json to use Yarn Workspaces by making it private and adding `projects/*` to the `workspaces` array.
+
+### NFT project
+Then we made our first project folder called `nft`, installed the packages, and then ran `yarn hardhat` after which we chose the option `Advanced TypeScript Project`. This bootstraps our project really nicely. I then went over the basic commands:
+1. `yarn hardhat compile` - compile the sample smart contract
+2. `yarn hardhat run scripts/deploy.ts --network ropstan`- deploy to the ropstan network
+3. `yarn hardhat test` - run the unit tests  
+
+After our second session we were able to create a hardhat project, compile, deploy, and test our smart contract. Congratulations!!!
